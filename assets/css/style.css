@@ -1,0 +1,279 @@
+.btn-primary {
+  background-color: #0e6cff;
+  border: none;
+  border-radius: 4px;
+  color: #f4f4f4;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: #ff8700;
+  border: none;
+  border-radius: 4px;
+  color: #f4f4f4;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.btn-secondary:hover {
+  transform: scale(1.05);
+}
+
+.btn-success {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 4px;
+  color: #f4f4f4;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.btn-success:hover {
+  transform: scale(1.05);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+.padding-block-sm {
+  padding-block: 8px;
+}
+
+.padding-inline-sm {
+  padding-inline: 8px;
+}
+
+.margin-block-sm {
+  margin-block: 8px;
+}
+
+.margin-inline-sm {
+  margin-inline: 8px;
+}
+
+.padding-block-normal {
+  padding-block: 16px;
+}
+
+.padding-inline-normal {
+  padding-inline: 16px;
+}
+
+.margin-block-normal {
+  margin-block: 16px;
+}
+
+.margin-inline-normal {
+  margin-inline: 16px;
+}
+
+.padding-block-md {
+  padding-block: 24px;
+}
+
+.padding-inline-md {
+  padding-inline: 24px;
+}
+
+.margin-block-md {
+  margin-block: 24px;
+}
+
+.margin-inline-md {
+  margin-inline: 24px;
+}
+
+.padding-block-lg {
+  padding-block: 32px;
+}
+
+.padding-inline-lg {
+  padding-inline: 32px;
+}
+
+.margin-block-lg {
+  margin-block: 32px;
+}
+
+.margin-inline-lg {
+  margin-inline: 32px;
+}
+
+.padding-block-xl {
+  padding-block: 48px;
+}
+
+.padding-inline-xl {
+  padding-inline: 48px;
+}
+
+.margin-block-xl {
+  margin-block: 48px;
+}
+
+.margin-inline-xl {
+  margin-inline: 48px;
+}
+
+.padding-block-xxl {
+  padding-block: 64px;
+}
+
+.padding-inline-xxl {
+  padding-inline: 64px;
+}
+
+.margin-block-xxl {
+  margin-block: 64px;
+}
+
+.margin-inline-xxl {
+  margin-inline: 64px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  background-color: #640fc5;
+  color: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+}
+.hero .hero-text {
+  font-size: 48px;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.hero .hero-text p {
+  font-size: 18px;
+}
+.hero .hero-text .btn-primary {
+  background-color: #0e6cff;
+  border: none;
+  border-radius: 4px;
+  color: #f4f4f4;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.hero .hero-text .btn-primary:hover {
+  transform: scale(1.05);
+}
+.hero .hero-text .btn-secondary {
+  background-color: #ff8700;
+  border: none;
+  border-radius: 4px;
+  color: #f4f4f4;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.hero .hero-text .btn-secondary:hover {
+  transform: scale(1.05);
+}
+.hero .hero-text .btn-success {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 4px;
+  color: #f4f4f4;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.hero .hero-text .btn-success:hover {
+  transform: scale(1.05);
+}
+.hero .hero-image {
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: 2px solid #f4f4f4;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.grid > * {
+  flex: 1 0 calc(25% - 16px);
+}
+.grid .grid-item {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  background-color: #f4f4f4;
+}
+
+.hero-animation-title {
+  animation: fade-title 1s ease-in-out 0s forwards;
+}
+@keyframes fade-title {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero-animation-description {
+  animation: fade-description 1s ease-in-out 0.2s forwards;
+}
+@keyframes fade-description {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero-animation-buttons {
+  animation: fade-buttons 1s ease-in-out 0.4s forwards;
+}
+@keyframes fade-buttons {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=style.css.map */

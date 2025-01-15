@@ -1,0 +1,22 @@
+@mixin padding($direction, $size) {
+  padding-#{$direction}: $size;
+}
+
+@mixin margin($direction, $size) {
+  margin-#{$direction}: $size;
+}
+
+@each $size, $value in (sm: 8px, normal: 16px, md: 24px, lg: 32px, xl: 48px, xxl: 64px) {
+  .padding-block-#{$size} {
+    @include padding(block, $value);
+  }
+  .padding-inline-#{$size} {
+    @include padding(inline, $value);
+  }
+  .margin-block-#{$size} {
+    @include margin(block, $value);
+  }
+  .margin-inline-#{$size} {
+    @include margin(inline, $value);
+  }
+}

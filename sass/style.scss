@@ -1,0 +1,62 @@
+@use "./partials/animations";
+@use "./partials/buttons";
+@use "./partials/colors" as colors;
+@use "./partials/fonts";
+@use "./partials/mixins" as mixins;
+@use "./partials/resets";
+@use "./partials/spacings";
+
+.hero {
+  background-color: colors.$color-bg-hero;
+  color: colors.$color-text;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+
+  .hero-text {
+    @include fonts.title-big;
+    margin-bottom: 16px;
+
+    p {
+      font-size: fonts.$font-size-medium;
+    }
+
+    .btn {
+      &-primary {
+        @include buttons.button(colors.$color-button-primary);
+      }
+      &-secondary {
+        @include buttons.button(colors.$color-button-secondary);
+      }
+      &-success {
+        @include buttons.button(colors.$color-button-success);
+      }
+    }
+  }
+
+  .hero-image {
+    @include mixins.floating(16px, 0 8px 16px rgba(0, 0, 0, 0.2), 2px solid colors.$color-text);
+  }
+}
+
+.grid {
+  @include mixins.grid(4);
+
+  .grid-item {
+    @include mixins.floating(8px, 0 4px 8px rgba(0, 0, 0, 0.1));
+    background-color: colors.$color-text;
+  }
+}
+
+.hero-animation {
+  &-title {
+    @include animations.fade-slide(1s, 0, 1, -30px, 0, 0s, fade-title);
+  }
+  &-description {
+    @include animations.fade-slide(1s, 0, 1, -20px, 0, 0.2s, fade-description);
+  }
+  &-buttons {
+    @include animations.fade-slide(1s, 0, 1, -10px, 0, 0.4s, fade-buttons);
+  }
+}
